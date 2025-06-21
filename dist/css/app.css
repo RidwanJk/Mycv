@@ -62,11 +62,11 @@
 }
 
 [data-theme="dark"] .brand {
-    background-image: '/dist/images/logos/dark/logo-dark.svg';
+    background-image: url('dist/images/logos/dark/logo-dark.svg');
 }
 
 [data-theme="light"] .brand {
-    background-image: '/dist/images/logos/default/logo.svg';
+    background-image: url('dist/images/logos/dark/logo-dark.svg');
 }
 
 /* ================================
