@@ -1,0 +1,223 @@
+<!-- resources/views/home.blade.php -->
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+
+
+    <title>About Me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://localhost/css/app.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="http://localhost/images/logos/icons/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a href="http://localhost" class="brand" title="Home"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="http://localhost"
+                                aria-current="page">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="http://localhost/skills">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="http://localhost/about">
+                                About
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                    <button id="theme-toggle" class="btn btn-outline-secondary ms-3" title="Toggle theme">
+                        <span id="theme-icon">🌞</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    
+    <main class="flex-fill container mt-4">
+            <main>
+        
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>BIOGRAPHY
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <p><span class="label"><i class="bi bi-person"></i> Nama:</span> Ridwan Jauhar
+                                        Kafabihi</p>
+                                    <p><span class="label"><i class="bi bi-geo-alt"></i> Alamat:</span> Malang, Jawa
+                                        Timur</p>
+                                    <p><span class="label"><i class="bi bi-telephone"></i> Nomor Telepon:</span>
+                                        085108058777</p>
+                                    <p><span class="label"><i class="bi bi-envelope"></i> Email:</span>
+                                        j.kafabihi@email.com</p>
+                                    <p><span class="label"><i class="bi bi-linkedin"></i> LinkedIn:</span>
+                                        <a href="https://linkedin.com/in/ridwan-kafabihi-2406aa24a" target="_blank">
+                                            linkedin.com/in/ridwan-kafabihi-2406aa24a
+                                        </a>
+                                    </p>
+                                    <p><span class="label"><i class="bi bi-github"></i> GitHub:</span>
+                                        <a href="https://github.com/RidwanJk" target="_blank">github.com/RidwanJk</a>
+                                    </p>
+                                </div>
+
+                                <div class="col-md-6 text-center">
+                                    <img src="http://localhost/images/assets/Me34.jpg" alt="Profile Picture"
+                                        class="profile-picture" style="height: 500px; object-fit">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card mt-5 pt-5 pb-5">
+
+                        <div class="container">
+                            <div class="col mx-5">
+                                <h5 class="card-title">About me</h5>
+                                <p class="card-text justify-content-end">I am a fresh graduate from UIN Malang
+                                    Informatics Engineering Program who has a great interest in technology development,
+                                    especially in the field of Game Dev and Web Dev. In addition, I also study other
+                                    aspects such as Networking and Data Science. I am a hardworking person, highly
+                                    curious, and always eager to learn new things. I hope to develop my career in a
+                                    position that suits my skills and interests.
+                                </p>
+                            </div>
+                            <div class="section mt-5">
+                                <div class="education-section">
+                                    <h2>Recent Study </h2>
+
+                                    <div class="edu-item">
+                                        <div class="title">UIN Maulana Malik Ibrahim Malang – Teknik Informatika (S.Kom)
+                                        </div>
+                                        <div class="years">2021 – 2025 | GPA: 3.76</div>
+                                    </div>
+
+                                    <div class="edu-item">
+                                        <div class="title">SMA Negeri 7 Malang – IPA</div>
+                                        <div class="years">2018 – 2021</div>
+                                    </div>
+
+                                    <div class="edu-item">
+                                        <div class="title">SMP Negeri 11 Malang</div>
+                                        <div class="years">2015 – 2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="container ms-5 me-5">
+                                    <h3>Language</h3>
+                                    <p>Indonesian</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 100%;">Native</div>
+                                    </div>
+
+                                    <p>English</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%;">Advanced</div>
+                                    </div>
+
+                                    <p>Other</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 30%;">Basic</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    </main>
+
+
+
+
+    <footer class="text-center mt-5 py-3">
+        <!-- You can add footer content here -->
+        <small>© 2025 Ridwan Jauhar. All rights reserved.</small>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+        </script>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.body.setAttribute('data-theme', savedTheme);
+        themeIcon.textContent = savedTheme === 'dark' ? '🌙' : '🌞';
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            document.body.setAttribute('data-theme', newTheme);
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '🌙' : '🌞';
+        });
+    </script>
+</body>
+
+</html>
