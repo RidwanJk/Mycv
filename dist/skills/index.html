@@ -12,7 +12,7 @@
 
     <title>Skills</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="https://ridwanjk.github.io/Mycv/dist/css/app.css">
+    <link rel="stylesheet" href="https://ridwanjk.github.io/Mycv/dist//css/app.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="https://ridwanjk.github.io/Mycv/dist/images/logos/icons/favicon.svg">
+    <link rel="icon" href="https://ridwanjk.github.io/Mycv/dist//images/logos/icons/favicon.svg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,32 +37,38 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a href="https://ridwanjk.github.io/Mycv/dist" class="brand" title="Home"></a>
+                <a href="https://ridwanjk.github.io/Mycv/dist/" class="brand" title="Home"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist"
+                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist/"
                                 aria-current="page">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="https://ridwanjk.github.io/Mycv/dist/skills">
+                            <a class="nav-link active" href="https://ridwanjk.github.io/Mycv/dist//skills">
                                 Skills
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist/about">
+                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist//about">
                                 About
                             </a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="https://ridwanjk.github.io/Mycv/dist//projects">
+                                Projects
+                            </a>
+                        </li>
                     </ul>
 
                     <button id="theme-toggle" class="btn btn-outline-secondary ms-3" title="Toggle theme">
@@ -78,123 +84,174 @@
 
     
     <main class="flex-fill container mt-4">
-        <div class="container mt-5 pt-5">
-    <h1 class="text-center mb-4">My Skills</h1>
+            <div class="container mt-5 pt-5">
+        <h1 class="text-center mb-4">My Skills</h1>
 
-    <div class="row g-4">
-        <!-- Programming Languages -->
-        <div class="col-md-6">
-            <div class="card shadow-sm h-100">
-                <div class="card-body">
-                    <div class="skill-image-icon"><i class="bi bi-code-slash"></i></div>
-                    <h5 class="card-title text-center">Programming Languages</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="skill-icon" alt="C#">
-                            C#
-                        </li>
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python">
-                            Python
-                        </li>
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="skill-icon" alt="PHP">
-                            PHP
-                        </li>
-                    </ul>
+        <div class="row g-4">
+            <!-- Programming Languages -->
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="skill-image-icon"><i class="bi bi-code-slash"></i></div>
+                        <h5 class="card-title text-center">Programming Languages</h5>
+                        <div class="scrollable-container" style="max-height: 120px; overflow-y: auto;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                        class="skill-icon" alt="C#">
+                                    C#
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                        class="skill-icon" alt="Python">
+                                    Python
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                        class="skill-icon" alt="PHP">
+                                    PHP
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                        class="skill-icon" alt="PHP">
+                                    Java
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Frameworks -->
-        <div class="col-md-6">
-            <div class="card shadow-sm h-100">
-                <div class="card-body">
-                    <div class="skill-image-icon"><i class="bi bi-tools"></i></div>
-                    <h5 class="card-title text-center">Frameworks & Libraries</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" class="skill-icon" alt="Laravel">
-                            Laravel
-                        </li>
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="skill-icon" alt="Bootstrap">
-                            Bootstrap
-                        </li>
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" alt="React">
-                            React (Basic)
-                        </li>
-                    </ul>
+            <!-- Frameworks -->
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+
+                        <div class="skill-image-icon"><i class="bi bi-tools"></i></div>
+                        <h5 class="card-title text-center">Frameworks & Libraries</h5>
+                        <div class="scrollable-container" style="max-height: 120px; overflow-y: auto;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/laravel/laravel-original.svg"
+                                        class="skill-icon" alt="Laravel">
+                                    Laravel
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                        class="skill-icon" alt="Bootstrap">
+                                    Bootstrap
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/pandas/pandas-original.svg"
+                                        class="skill-icon" alt="React">
+                                    Pandas
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://img.icons8.com/?size=100&id=aR9CXyMagKIS&format=png&color=000000"
+                                        class="skill-icon" alt="React">
+                                    Numpy
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Python_and_Qt.svg/1200px-Python_and_Qt.svg.png"
+                                        class="skill-icon" alt="React">
+                                    Pyqt
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://img.icons8.com/?size=100&id=TkX1totjFmAD&format=png&color=000000"
+                                        class="skill-icon" alt="React">
+                                    Matplotlib
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Game Development -->
-        <div class="col-md-6">
-            <div class="card shadow-sm h-100">
-                <div class="card-body">
-                    <div class="skill-image-icon"><i class="bi bi-controller"></i></div>
-                    <h5 class="card-title text-center">Game Development</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" class="skill-icon" alt="Unity">
-                            Unity (C#)
-                        </li>
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" class="skill-icon" alt="Godot">
-                            Godot (Basic)
-                        </li>
-                    </ul>
+            <!-- Game Development -->
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="skill-image-icon"><i class="bi bi-controller"></i></div>
+                        <h5 class="card-title text-center">Game Development</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+                                    class="skill-icon" alt="Unity">
+                                Unity (C#)
+                            </li>
+                            <li class="list-group-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg"
+                                    class="skill-icon" alt="Godot">
+                                Blender
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Tools -->
-        <div class="col-md-6">
-            <div class="card shadow-sm h-100">
-                <div class="card-body">
-                    <div class="skill-image-icon"><i class="bi bi-terminal"></i></div>
-                    <h5 class="card-title text-center">Tools & Technologies</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon" alt="Git">
-                            Git & GitHub
-                        </li>
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-icon" alt="MySQL">
-                            MySQL
-                        </li>
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="skill-icon" alt="Linux">
-                            Linux
-                        </li>
-                        <li class="list-group-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="skill-icon" alt="Figma">
-                            Figma
-                        </li>
-                    </ul>
+            <!-- Tools -->
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="skill-image-icon"><i class="bi bi-terminal"></i></div>
+                        <h5 class="card-title text-center">Tools & Technologies</h5>
+
+                        <div class="scrollable-container" style="max-height: 120px; overflow-y: auto;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                        class="skill-icon" alt="Git">
+                                    Git & GitHub
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                        class="skill-icon" alt="MySQL">
+                                    MySQL
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                                        class="skill-icon" alt="Linux">
+                                    Linux
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                        class="skill-icon" alt="Figma">
+                                    Figma
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://img.icons8.com/?size=100&id=70667&format=png&color=000000"
+                                        class="skill-icon" alt="Power BI">
+                                    Power BI
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="https://img.icons8.com/?size=100&id=13654&format=png&color=000000"
+                                        class="skill-icon" alt="Power BI">
+                                    Excel
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Soft Skills -->
-        <div class="col-md-12">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <div class="skill-image-icon"><i class="bi bi-people"></i></div>
-                    <h5 class="card-title text-center">Soft Skills</h5>
-                    <div class="row text-center">
-                        <div class="col-md-3">Problem Solving</div>
-                        <div class="col-md-3">Teamwork</div>
-                        <div class="col-md-3">Adaptability</div>
-                        <div class="col-md-3">Time Management</div>
+            <!-- Soft Skills -->
+            <div class="col-md-12">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="skill-image-icon"><i class="bi bi-people"></i></div>
+                        <h5 class="card-title text-center">Soft Skills</h5>
+                        <div class="row text-center">
+                            <div class="col-md-3">Problem Solving</div>
+                            <div class="col-md-3">Teamwork</div>
+                            <div class="col-md-3">Adaptability</div>
+                            <div class="col-md-3">Time Management</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     </main>
 
 
@@ -231,6 +288,14 @@
             localStorage.setItem('theme', newTheme);
             themeIcon.textContent = newTheme === 'dark' ? '🌙' : '🌞';
         });
+    </script>
+
+    <script>
+        const projects = document.getElementById('projects-drp');
+        projects.addEventListener('click', function (event) {
+
+        });
+
     </script>
 </body>
 

@@ -16,7 +16,7 @@
 
     <title>About Me</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="https://ridwanjk.github.io/Mycv/dist/css/app.css">
+    <link rel="stylesheet" href="https://ridwanjk.github.io/Mycv/dist//css/app.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="https://ridwanjk.github.io/Mycv/dist/images/logos/icons/favicon.svg">
+    <link rel="icon" href="https://ridwanjk.github.io/Mycv/dist//images/logos/icons/favicon.svg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,32 +41,38 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a href="https://ridwanjk.github.io/Mycv/dist" class="brand" title="Home"></a>
+                <a href="https://ridwanjk.github.io/Mycv/dist/" class="brand" title="Home"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist"
+                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist/"
                                 aria-current="page">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist/skills">
+                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist//skills">
                                 Skills
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="https://ridwanjk.github.io/Mycv/dist/about">
+                            <a class="nav-link active" href="https://ridwanjk.github.io/Mycv/dist//about">
                                 About
                             </a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="https://ridwanjk.github.io/Mycv/dist//projects">
+                                Projects
+                            </a>
+                        </li>
                     </ul>
 
                     <button id="theme-toggle" class="btn btn-outline-secondary ms-3" title="Toggle theme">
@@ -114,7 +120,7 @@
                                 </div>
 
                                 <div class="col-md-6 text-center">
-                                    <img src="https://ridwanjk.github.io/Mycv/dist/images/assets/Me34.jpg" alt="Profile Picture"
+                                    <img src="https://ridwanjk.github.io/Mycv/dist//images/assets/Me34.jpg" alt="Profile Picture"
                                         class="profile-picture" style="height: 500px; object-fit">
                                 </div>
                             </div>
@@ -130,7 +136,7 @@
                                 <p class="card-text justify-content-end">I am a fresh graduate from UIN Malang
                                     Informatics Engineering Program who has a great interest in technology development,
                                     especially in the field of Game Dev and Web Dev. In addition, I also study other
-                                    aspects such as Networking and Data Science. I am a hardworking person, highly
+                                    aspects such as Networking and Data Analytics. I am a hardworking person, highly
                                     curious, and always eager to learn new things. I hope to develop my career in a
                                     position that suits my skills and interests.
                                 </p>
@@ -217,6 +223,14 @@
             localStorage.setItem('theme', newTheme);
             themeIcon.textContent = newTheme === 'dark' ? '🌙' : '🌞';
         });
+    </script>
+
+    <script>
+        const projects = document.getElementById('projects-drp');
+        projects.addEventListener('click', function (event) {
+
+        });
+
     </script>
 </body>
 

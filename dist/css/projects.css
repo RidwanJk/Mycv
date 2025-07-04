@@ -1,0 +1,44 @@
+section {
+    scroll-margin-top: 40px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    border-left: 4px solid #0d6efd;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.card {
+    border-radius: 8px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.scrollable-container {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-wrapper {
+  scroll-snap-align: start;
+}

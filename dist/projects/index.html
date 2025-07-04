@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+
+
+    <title>My Projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://ridwanjk.github.io/Mycv/dist//css/app.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://ridwanjk.github.io/Mycv/dist//images/logos/icons/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a href="https://ridwanjk.github.io/Mycv/dist/" class="brand" title="Home"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist/"
+                                aria-current="page">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist//skills">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://ridwanjk.github.io/Mycv/dist//about">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="https://ridwanjk.github.io/Mycv/dist//projects">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button id="theme-toggle" class="btn btn-outline-secondary ms-3" title="Toggle theme">
+                        <span id="theme-icon">🌞</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    
+    <main class="flex-fill container mt-4">
+            <link rel="stylesheet" href="https://ridwanjk.github.io/Mycv/dist//css/projects.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5" data-aos="fade-down">My Projects</h1>
+        <!-- Project Categories -->
+        <div class="scrollable-container d-flex flex-nowrap gap-4 overflow-x-auto px-3 py-4 snap-x">
+            <div class="card-wrapper flex-shrink-0" style="width: 300px;">
+                <div class="card h-100 shadow-sm border-0">
+                    <img loading="lazy" src="images/projects/game/cover.jpg" loading="lazy" class="card-img-top"
+                        alt="Game Dev">
+                    <div class="card-body">
+                        <h5 class="card-title">🎮 Game Development</h5>
+                        <p class="card-text">Unity, gameplay AI, pathfinding, and fun prototypes.</p>
+                        <a href="#game-dev" class="btn btn-outline-primary w-100">See Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-wrapper flex-shrink-0" style="width: 300px;">
+                <div class="card h-100 shadow-sm border-0">
+                    <img loading="lazy" src="images/projects/web/cover.jpg" class="card-img-top" alt="Web Dev">
+                    <div class="card-body">
+                        <h5 class="card-title">🌐 Web Development</h5>
+                        <p class="card-text">Full-stack projects using Laravel, JavaScript, and modern UI.</p>
+                        <a href="#web-dev" class="btn btn-outline-primary w-100">See Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper flex-shrink-0" style="width: 300px;">
+                <div class="card h-100 shadow-sm border-0">
+                    <img loading="lazy" src="images/projects/data/cover.jpg" class="card-img-top" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">📊 Data Science</h5>
+                        <p class="card-text">ML, Python, data analysis, and visual storytelling.</p>
+                        <a href="#data-science" class="btn btn-outline-primary w-100">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper flex-shrink-0" style="width: 300px;">
+                <div class="card h-100 shadow-sm border-0">
+                    <img loading="lazy" src="images/projects/mobile/cover.svg" class="card-img-top" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">📱 Mobile</h5>
+                        <p class="card-text">ML, Python, data analysis, and visual storytelling.</p>
+                        <a href="#data-science" class="btn btn-outline-primary w-100">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper flex-shrink-0" style="width: 300px;">
+                <div class="card h-100 shadow-sm border-0">
+                    <img loading="lazy" src="images/projects/py/cover.jpg" class="card-img-top" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">🐍 Python Apps</h5>
+                        <p class="card-text">ML, Python, data analysis, and visual storytelling.</p>
+                        <a href="#data-science" class="btn btn-outline-primary w-100">See Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Game Development Section -->
+        <section id="game-dev" class="py-5" data-aos="fade-right">
+            <hr class="my-5">
+            <div class="accordion accordion-flush" id="gameAccordion">
+                <h2 class="mb-3">🎮 Game Development</h2>
+                <p>Game projects I worked on during my studies and hobby time. Focused on Unity and algorithmic systems.</p>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#gameCollapseOne" aria-expanded="false" aria-controls="gameCollapseOne">
+                            TSP Puzzle Game
+                        </button>
+                    </h2>
+                    <div id="gameCollapseOne" class="accordion-collapse collapse" data-bs-parent="#gameAccordion">
+                        <div class="accordion-body">
+                            Solving paths and Travelling Salesman Problem for my thesis.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#tspModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#gameCollapseTwo" aria-expanded="false" aria-controls="gameCollapseTwo">
+                            3D Maze Game
+                        </button>
+                    </h2>
+                    <div id="gameCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#gameAccordion">
+                        <div class="accordion-body">
+                            3D Horror game in a Maze to exorcise the demon.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#horormodal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Development Section -->
+        <section id="web-dev" class="py-5" data-aos="fade-right">
+            <hr class="my-5">
+            <div class="accordion accordion-flush" id="webAccordion">
+                <h2 class="mb-3">🌐 Web Development</h2>
+                <p>Web projects I developed during academic projects and freelance work, using technologies like HTML, CSS,
+                    PHP, and JavaScript.</p>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#webCollapseOne" aria-expanded="false" aria-controls="webCollapseOne">
+                            Conference Management System
+                        </button>
+                    </h2>
+                    <div id="webCollapseOne" class="accordion-collapse collapse" data-bs-parent="#webAccordion">
+                        <div class="accordion-body">
+                            Built using CodeIgniter (PHP MVC), the system supports paper submission, reviewer assignment,
+                            and multi-role access. Developed as a backend developer in a team of 8.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#cmsModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#webCollapseTwo" aria-expanded="false" aria-controls="webCollapseTwo">
+                            Personal Blog CMS
+                        </button>
+                    </h2>
+                    <div id="webCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#webAccordion">
+                        <div class="accordion-body">
+                            Developed a simple content management system with login, article creation, and category
+                            filtering using PHP and MySQL.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Science Section -->
+        <section id="data-science" class="py-5" data-aos="fade-right">
+            <hr class="my-5">
+            <div class="accordion accordion-flush" id="dataAccordion">
+                <h2 class="mb-3">📊 Data Science</h2>
+                <p>Exploratory data analysis, prediction models, and interactive charts using Python tools.</p>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#dataCollapseOne" aria-expanded="false" aria-controls="dataCollapseOne">
+                            Laptop Price Prediction
+                        </button>
+                    </h2>
+                    <div id="dataCollapseOne" class="accordion-collapse collapse" data-bs-parent="#dataAccordion">
+                        <div class="accordion-body">
+                            Developed a regression model using XGBoost to predict laptop prices based on multiple features.
+                            Performed feature engineering and model evaluation to improve accuracy.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#laptopModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#dataCollapseTwo" aria-expanded="false" aria-controls="dataCollapseTwo">
+                            COVID-19 Indonesia Analysis
+                        </button>
+                    </h2>
+                    <div id="dataCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#dataAccordion">
+                        <div class="accordion-body">
+                            Conducted data analysis and visualization of COVID-19 spread in Indonesia using Matplotlib and
+                            Seaborn.
+                            Created interactive charts and summary statistics to help understand trends over time.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#covidModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile Development Section -->
+        <section id="mobile-dev" class="py-5" data-aos="fade-right">
+            <hr class="my-5">
+            <div class="accordion accordion-flush" id="mobileAccordion">
+                <h2 class="mb-3">📱 Mobile Development</h2>
+                <p>Mobile apps built using Flutter and native Android to provide user-focused functionality with elegant UI.
+                </p>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mobileCollapseOne" aria-expanded="false" aria-controls="mobileCollapseOne">
+                            Task Manager App
+                        </button>
+                    </h2>
+                    <div id="mobileCollapseOne" class="accordion-collapse collapse" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body">
+                            A productivity app for managing daily tasks and reminders using Flutter and Firebase.
+                            Includes authentication, notifications, and cloud sync.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#taskModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mobileCollapseTwo" aria-expanded="false" aria-controls="mobileCollapseTwo">
+                            Campus Info App
+                        </button>
+                    </h2>
+                    <div id="mobileCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body">
+                            Android-based app to access campus news, events, and academic schedules. Built using Java and
+                            SQLite.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#campusModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Python Apps Section -->
+        <section id="python-apps" class="py-5" data-aos="fade-right">
+            <hr class="my-5">
+            <div class="accordion accordion-flush" id="pythonAccordion">
+                <h2 class="mb-3">🐍 Python Applications</h2>
+                <p>Small tools and apps built with Python, focusing on automation, data processing, and desktop utilities.
+                </p>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pythonCollapseOne" aria-expanded="false" aria-controls="pythonCollapseOne">
+                            PDF File Merger Tool
+                        </button>
+                    </h2>
+                    <div id="pythonCollapseOne" class="accordion-collapse collapse" data-bs-parent="#pythonAccordion">
+                        <div class="accordion-body">
+                            Python GUI tool using Tkinter and PyPDF2 to merge multiple PDF files into one.
+                            Useful for students and office tasks.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#pdfModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pythonCollapseTwo" aria-expanded="false" aria-controls="pythonCollapseTwo">
+                            YouTube Downloader CLI
+                        </button>
+                    </h2>
+                    <div id="pythonCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#pythonAccordion">
+                        <div class="accordion-body">
+                            Command-line app built with Python and `pytube` to download YouTube videos in various
+                            resolutions.
+                            Includes progress bar and batch support.
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#ytModal"
+                                class="btn btn-outline-primary w-100 d-flex justify-content-center align-items-center gap-2 mt-2">
+                                <i class="bi bi-eye"></i> Preview Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Python Apps Section -->
+
+    </div>
+    </div>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+
+    <!-- 🎮 Game Modals -->
+    <div class="modal fade" id="tspModal" tabindex="-1" aria-labelledby="tspModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tspModalLabel">🎮 TSP Puzzle Game</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        This game is the result of my thesis. the game created on top of <strong>Travelling Salesman Problem
+                            (TSP)</strong> for the game challange. As for the thesis topic i created In-Game Assistant in
+                        form of TSP
+                        Algorithm and Pathfinding Algorithm to help player reach the fastest time at creating a building or
+                        to plant a trees to reach a certain score.
+                    </p>
+                    <p>
+                        This game is builded using <code>C#</code>, <code>Unity 3D</code>, and AI heuristik.
+                    </p>
+
+                    <!-- Optional: Video preview -->
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://ridwanjk.github.io/Mycv/dist//videos/games/tsp.mp4" title="TSP Gameplay" allowfullscreen></iframe>
+                    </div>
+
+                    <ul>
+                        <li>Unity 3D</li>
+                        <li>Exact based solution in TSP</li>
+                        <li>Pathfinding AI using A* Algorithm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="horormodal" tabindex="-1" aria-labelledby="horormodallabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="horormodallabel">🎮 3D Horror Game 👻</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Horror
+                    </p>
+
+                    <!-- Optional: Video preview -->
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://ridwanjk.github.io/Mycv/dist//videos/games/tsp.mp4" title="TSP Gameplay" allowfullscreen></iframe>
+                    </div>
+
+                    <ul>
+                        <li>Unity 3D</li>
+                        <li>Unity navmesh agent</li>
+                        <li>Islamic excorsizm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🌐 Web Modals -->
+    <div class="modal fade" id="cmsModal" tabindex="-1" aria-labelledby="cmsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cmsModalLabel">Conference Management System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Web-based system for managing conference submissions, reviews, and user roles. Built with CodeIgniter,
+                    MySQL, and Bootstrap.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel">Personal Blog CMS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Content management system where users can login, write, edit, and categorize articles. Developed using
+                    PHP and MySQL with clean Bootstrap UI.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📊 Data Science Modals -->
+    <div class="modal fade" id="laptopModal" tabindex="-1" aria-labelledby="laptopModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="laptopModalLabel">Laptop Price Prediction</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Regression model using XGBoost to predict laptop prices. Performed feature engineering, visualization,
+                    and model tuning with scikit-learn.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="covidModal" tabindex="-1" aria-labelledby="covidModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="covidModalLabel">COVID-19 Indonesia Analysis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Time-series and demographic analysis of COVID-19 cases in Indonesia. Built using Python, Matplotlib,
+                    Pandas, and Seaborn for data visualization.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📱 Mobile App Modals -->
+    <div class="modal fade" id="taskModal" tabindex="-1" aria-labelledby="taskModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="taskModalLabel">Task Manager App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Cross-platform task manager built using Flutter and Firebase. Supports task creation, scheduling, cloud
+                    sync, and push notifications.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="campusModal" tabindex="-1" aria-labelledby="campusModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="campusModalLabel">Campus Info App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Android application providing students with real-time campus news, event schedules, and academic
+                    information. Built with Java and SQLite.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🐍 Python App Modals -->
+    <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pdfModalLabel">PDF Merger Tool</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Desktop application to merge multiple PDF files into one. Built using Python with Tkinter GUI and PyPDF2
+                    library.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ytModal" tabindex="-1" aria-labelledby="ytModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ytModalLabel">YouTube Downloader CLI</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A simple command-line tool to download YouTube videos in various qualities using Python and pytube.
+                    Includes progress indicator and error handling.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </main>
+
+
+
+
+    <footer class="text-center mt-5 py-3">
+        <!-- You can add footer content here -->
+        <small>© 2025 Ridwan Jauhar. All rights reserved.</small>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+        </script>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.body.setAttribute('data-theme', savedTheme);
+        themeIcon.textContent = savedTheme === 'dark' ? '🌙' : '🌞';
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            document.body.setAttribute('data-theme', newTheme);
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '🌙' : '🌞';
+        });
+    </script>
+
+    <script>
+        const projects = document.getElementById('projects-drp');
+        projects.addEventListener('click', function (event) {
+
+        });
+
+    </script>
+</body>
+
+</html>
